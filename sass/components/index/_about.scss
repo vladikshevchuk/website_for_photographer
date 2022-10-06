@@ -1,0 +1,59 @@
+.about {
+    h2 {
+        font-style: italic;
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: -0.06em;
+        text-transform: uppercase;
+        
+        color: #D59D40;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-style: normal;
+        line-height: 39px;
+        /* identical to box height */
+        
+        color: #464646;
+    }
+
+    h4 {
+        font-size: 9px;
+        font-style: normal;
+        line-height: 110.6%;
+        /* identical to box height, or 10px */
+        
+        letter-spacing: -0.055em;
+        text-transform: uppercase;
+        
+        color: #464646;
+    }
+
+    h5 {
+        text-align: center;
+
+        font-size: 18px;
+        font-style: normal;
+        line-height: 23px;
+        
+        color: #D59D40;
+    }
+
+    p {
+        width: 269px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8px;
+        margin-bottom: 17px;
+
+        font-style: normal;
+        font-size: 14px;
+        line-height: 123.1%;
+        /* or 17px */
+        
+        text-align: center;
+        letter-spacing: 0.025em;
+    }
+}

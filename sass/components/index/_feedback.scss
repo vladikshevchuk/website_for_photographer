@@ -1,0 +1,71 @@
+.feedback {
+    margin-top: 28px;
+    padding-bottom: 47px;
+
+    div {
+        margin-left: 50px;
+        margin-right: 40px;
+
+        padding-top: 46px;
+        border-top: 1px solid #D59D40;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .comments {
+        @media screen and (max-width: 767px) {
+                display: none;
+            }
+    }
+
+    h3 {
+        text-align: center;
+
+        font-style: normal;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0.055em;
+    }
+
+    h4 {
+        text-align: center;
+        margin-left: 20px;
+
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 107.1%;
+        /* or 21px */
+        
+        text-transform: lowercase;
+    }
+
+    .mob {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 32px;
+        margin-bottom: 59px;
+
+        font-style: normal;
+        font-size: 14px;
+        line-height: 123.1%;
+        /* or 17px */
+        
+        text-align: center;
+        letter-spacing: 0.025em;
+    }
+
+    .button-mob {
+        @media screen and (min-width: 1600px) {
+                display: none;
+            }
+    }
+
+    .desktop {
+        @media screen and (max-width: 1600px) {
+            display: none;
+        }
+    }
+} 

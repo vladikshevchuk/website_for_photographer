@@ -1,0 +1,82 @@
+.contacts {
+    h2 {
+        font-style: normal;
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: -0.055em;
+        
+        color: #D59D40;
+    }
+
+    h3 {
+        font-size: 11px;
+        font-style: normal;
+        line-height: 110.6%;
+        /* or 12px */
+        
+        letter-spacing: -0.015em;
+        text-transform: uppercase;
+        
+        color: #464646;
+    }
+
+    a {
+        font-style: italic;
+        font-size: 11px;
+        line-height: 14px;
+        
+        color: #464646;
+    }
+}
+
+.communicate {
+    display: flex;
+    margin-top: 13px;
+
+    address {
+        padding-top: 36px;
+        padding-bottom: 33px;
+
+        a {
+            display: block;
+        }
+
+        a + a {
+            margin-top: 20px;
+        }
+    }
+}
+
+.questions {
+    padding-top: 30px;
+
+    .mob {
+        margin-left: 27px;
+        margin-top: 30px;
+        margin-bottom: 36px;
+
+        font-style: normal;
+        font-size: 14px;
+        line-height: 123.1%;
+        /* or 17px */
+        
+        letter-spacing: 0.025em;
+        
+        color: #464646;
+        
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    
+    .tab {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    .button {
+        margin-left: 27px;
+    }
+
+}

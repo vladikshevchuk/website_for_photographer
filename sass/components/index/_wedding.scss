@@ -1,0 +1,48 @@
+.wedding {
+    h2 {
+        font-style: normal;
+        font-size: 43px;
+        line-height: 56px;
+        /* identical to box height */
+        
+        letter-spacing: -0.08em;
+        
+        color: #464646;
+    }
+
+    h3 {
+        font-size: 12px;
+        font-style: normal;
+        line-height: 120.4%;
+        /* or 14px */
+        
+        text-transform: uppercase;
+        
+        color: #D59D40;
+    }
+
+    p {
+        @media screen and (max-width: 1599px) {
+            display: none;
+        }
+    }
+
+    .gallary-mob {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin-top: 29px;
+        margin-bottom: 105px;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    .examples {
+        @media screen and (max-width: 1599px) {
+            display: none;
+        }
+    }
+}

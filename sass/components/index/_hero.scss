@@ -1,0 +1,114 @@
+h1 {
+    margin-left: 14px;
+    margin-right: 14px;
+
+    font-style: normal;
+    font-size: 60px;
+    line-height: 78px;
+    /* identical to box height */
+    letter-spacing: -0.075em;
+    color: #0D0A09;
+
+    text-align: center;
+}
+
+.hero div {
+    // height: 803px;
+    margin-left: -14px;
+    margin-right: -14px;
+    padding-top: 53px;
+    padding-bottom: 302px;
+
+    text-align: center;
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0),
+                rgba(47, 48, 58, 0)),
+            url(../images/bg-photo/bg-mob.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/bg-photo/bg-mob@2x.jpg);
+        }
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    h2 {
+        text-align: center;
+        margin-left: 104px;
+        margin-right: 14px;
+
+        font-style: italic;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.025em;
+        color: #464646;
+    }
+
+    p {
+        margin-top: 48px;
+        margin-left: 61px;
+        margin-right: 61px;
+
+        text-align: left;
+
+        font-style: normal;
+        font-size: 18px;
+        line-height: 125.6%;
+        /* or 23px */
+        letter-spacing: 0.105em;
+        color: #000000;
+    }
+}
+
+.benefits {
+    margin-top: 36px;
+    margin-bottom: 56px;
+    text-align: center;
+
+    li + li {
+        margin-top: 31px;
+    }
+
+    a {
+        font-style: normal;
+        font-size: 18px;
+        line-height: 23px;
+        
+        color: #D59D40;
+
+        &:hover,
+        &:focus {
+            color: #464646;
+        }
+    }
+
+    p { 
+        margin-top: 28px;
+        margin-bottom: 9px;
+        margin-left: 61px;
+        margin-right: 62px;
+
+        text-align: left;
+
+        font-style: italic;
+        font-size: 22px;
+        line-height: 109.6%;
+        /* or 24px */
+        
+        color: #464646;
+
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     // left: -15;
+        //     // bottom: 0;
+        //     width: 331px;
+        //     height: 220px;
+        //     background: #F0F0F0;
+        // }
+    }
+}

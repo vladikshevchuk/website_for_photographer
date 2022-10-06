@@ -1,0 +1,56 @@
+.faq {
+    h2 {
+        margin-left: 129px;
+
+        font-style: normal;
+        font-size: 80px;
+        line-height: 103px;
+        letter-spacing: 0.01em;
+        
+        color: #D59D40;
+    }
+
+    h3 {
+        margin-left: 128px;
+
+        font-style: normal;
+        font-size: 15px;
+        line-height: 120.4%;
+        /* identical to box height, or 18px */
+        
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        
+        color: #D59D40;
+    }
+
+    p {
+        margin-left: 128px;
+
+        font-style: normal;
+        font-size: 16px;
+        line-height: 127.4%;
+        /* or 20px */
+        
+        letter-spacing: 0.05em;
+        
+        color: #464646;
+    }
+
+    ul {
+        margin-top: 0;
+        margin-bottom: 46px;
+        margin-left: 44px;
+        margin-right: 42px;
+        padding-top: 63px;
+        padding-bottom: 53px;
+
+        background: rgba(251, 245, 236, 1);
+    }
+
+    .mob-faq {
+        @media screen and (max-width: 1600px) {
+            display: none;
+        }
+    }
+}
