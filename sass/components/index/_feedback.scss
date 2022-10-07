@@ -3,8 +3,9 @@
     padding-bottom: 47px;
 
     div {
-        margin-left: 50px;
-        margin-right: 40px;
+        width: 285px;
+        margin-left: auto;
+        margin-right: auto;
 
         padding-top: 46px;
         border-top: 1px solid #D59D40;
@@ -43,8 +44,10 @@
     }
 
     .mob {
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 216px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 32px;
         margin-bottom: 59px;
 

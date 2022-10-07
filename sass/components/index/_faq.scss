@@ -1,6 +1,30 @@
 .faq {
+    .faq-bg {
+        width: 288px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 404px;
+        padding-bottom: 104.66px;
+
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0),
+                    rgba(47, 48, 58, 0)),
+                url(../images/FAQ/FAQ-mob.jpg);
+        
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/FAQ/FAQ-mob@2x.jpg);
+            }
+        
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    }
+
     h2 {
-        margin-left: 129px;
+        margin-left: 99px;
 
         font-style: normal;
         font-size: 80px;
@@ -26,6 +50,7 @@
 
     p {
         margin-left: 128px;
+        margin-right: 11px;
 
         font-style: normal;
         font-size: 16px;
@@ -38,10 +63,11 @@
     }
 
     ul {
+        width: 288px;
         margin-top: 0;
         margin-bottom: 46px;
-        margin-left: 44px;
-        margin-right: 42px;
+        margin-left: auto;
+        margin-right: auto;
         padding-top: 63px;
         padding-bottom: 53px;
 

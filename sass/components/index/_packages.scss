@@ -1,9 +1,27 @@
 .packages {
-    h2 {
+    .packages-bg {
         margin-left: -14px;
         margin-right: -14px;
         padding-top: 394px;
+
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0),
+                    rgba(47, 48, 58, 0)),
+                url(../images/packages/packages-mob.jpg);
         
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/packages/packages-mob@2x.jpg);
+            }
+        
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    }
+
+    h2 {
         font-style: normal;
         font-size: 60px;
         line-height: 78px;
@@ -14,22 +32,6 @@
         color: #FFFFFF;
         
         text-align: center;
-
-        background-image: linear-gradient(to right,
-        rgba(47, 48, 58, 0),
-        rgba(47, 48, 58, 0)),
-        url(../images/packages/packages-mob.jpg);
-        
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/packages/packages-mob@2x.jpg);
-        }
-        
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
     }
 
     h3 {
@@ -48,8 +50,10 @@
     }
 
     p {
-        margin-left: 51px;
-        margin-right: 55px;
+        width: 241px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 12px;
         padding-top: 21px;
         border-top: 2px solid #D59D40;

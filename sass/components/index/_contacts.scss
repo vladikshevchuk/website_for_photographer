@@ -1,14 +1,57 @@
 .contacts {
+    .brides-bg {
+        height: 225px;
+        margin-left: -14px;
+        margin-right: -14px;
+        margin-top: 57px;
+        padding-top: 185px;
+
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0),
+                    rgba(47, 48, 58, 0)),
+                url(../images/brides/brides-mob.jpg);
+        
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/brides/brides-mob@2x.jpg);
+            }
+        
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    }
+
+    .cont-bg {
+        width: 267px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     h2 {
+        // position: absolute;
+        // bottom: 0;
+        padding: 6px 0;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
         font-style: normal;
         font-size: 35px;
         line-height: 45px;
         letter-spacing: -0.055em;
         
         color: #D59D40;
+        background-color: rgba(255, 255, 255, 0.6);
     }
 
     h3 {
+        text-align: center;
+        margin-left: 123px;
+
         font-size: 11px;
         font-style: normal;
         line-height: 110.6%;
@@ -29,30 +72,53 @@
     }
 }
 
-.communicate {
-    display: flex;
+.contacts-bg {
+    position: relative;
+    display: block;
+    width: 178px;
+    height: 151px;
     margin-top: 13px;
+    margin-left: -14px;
+    background-color: #F0F0F0;
+}
+
+.communicate {
+    position: absolute;
+    display: flex;
+    top: 20px;
+    left: 15px;
+    // margin-top: 13px;
+
 
     address {
-        padding-top: 36px;
-        padding-bottom: 33px;
+        // padding-top: 36px;
+        // padding-bottom: 33px;
+        
+        @media screen and (min-width: 375px) {
+            margin-left: 30px;
+        }
 
         a {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         a + a {
             margin-top: 20px;
         }
+
+        .icon {
+            margin-left: 16px;
+        }
     }
 }
 
 .questions {
-    padding-top: 30px;
+    margin-right: 44px;
 
     .mob {
         margin-left: 27px;
-        margin-top: 30px;
         margin-bottom: 36px;
 
         font-style: normal;
