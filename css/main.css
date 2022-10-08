@@ -95,6 +95,7 @@ header .menu-button {
   height: 7px;
   margin-top: 11px;
   margin-left: auto;
+  left: 332px;
 }
 @media screen and (max-width: 767px) {
   header .menu {
