@@ -41,3 +41,8 @@ img {
 ul {
     padding: 0;
 }
+
+.position {
+    display: flex;
+    flex-direction: column-reverse;
+}

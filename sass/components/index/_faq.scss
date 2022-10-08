@@ -1,10 +1,11 @@
 .faq {
     .faq-bg {
-        width: 288px;
+        position: relative;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 404px;
-        padding-bottom: 104.66px;
+        margin-bottom: 330px;
+        padding-top: 328px;
+        // padding-bottom: 279px;
 
         background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0),
@@ -24,7 +25,10 @@
     }
 
     h2 {
-        margin-left: 99px;
+        position: absolute;
+        z-index: 100;
+        left: 40%;
+        top: 80%;
 
         font-style: normal;
         font-size: 80px;
@@ -63,6 +67,11 @@
     }
 
     ul {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 50%);
+
         width: 288px;
         margin-top: 0;
         margin-bottom: 46px;

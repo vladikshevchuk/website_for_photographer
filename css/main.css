@@ -58,6 +58,16 @@ ul {
   padding: 0;
 }
 
+.position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -359,11 +369,11 @@ h1 {
 }
 
 .faq .faq-bg {
-  width: 288px;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 404px;
-  padding-bottom: 104.66px;
+  margin-bottom: 330px;
+  padding-top: 328px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0)), to(rgba(47, 48, 58, 0))), url(../images/FAQ/FAQ-mob.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0), rgba(47, 48, 58, 0)), url(../images/FAQ/FAQ-mob.jpg);
   background-repeat: no-repeat;
@@ -376,7 +386,10 @@ h1 {
   }
 }
 .faq h2 {
-  margin-left: 99px;
+  position: absolute;
+  z-index: 100;
+  left: 40%;
+  top: 80%;
   font-style: normal;
   font-size: 80px;
   line-height: 103px;
@@ -404,6 +417,11 @@ h1 {
   color: #464646;
 }
 .faq ul {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
   width: 288px;
   margin-top: 0;
   margin-bottom: 46px;
