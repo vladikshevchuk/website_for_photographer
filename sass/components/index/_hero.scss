@@ -1,7 +1,4 @@
 h1 {
-    margin-left: 14px;
-    margin-right: 14px;
-
     font-style: normal;
     font-size: 60px;
     line-height: 78px;
@@ -12,10 +9,7 @@ h1 {
     text-align: center;
 }
 
-.hero div {
-    // height: 803px;
-    margin-left: -14px;
-    margin-right: -14px;
+.hero-bg {
     padding-top: 53px;
     padding-bottom: 302px;
 
@@ -104,5 +98,28 @@ h1 {
         /* or 24px */
         
         color: #464646;
+    }
+
+    .benefits-content-bg {
+        position: relative;
+        width: 331px;
+        height: 220px;
+        margin-left: auto;
+        background: #F0F0F0;
+    }
+
+    .benefits-content {
+        position: absolute;
+        top: -8px;
+        left: 31px;
+    }
+
+    .benefits-line {
+        position: absolute;
+        top: -77px;
+        left: 286px;
+        width: 1px;
+        height: 357px;
+        background: #D59D40;
     }
 }

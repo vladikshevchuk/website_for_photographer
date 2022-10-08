@@ -1,0 +1,16 @@
+header {
+    .menu-button {
+        position: absolute;
+        width: 29px;
+        height: 7px;
+        margin-top: 11px;
+        margin-left: auto;
+
+    }
+
+    .menu {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+}

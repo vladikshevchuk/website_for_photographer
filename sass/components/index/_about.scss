@@ -1,4 +1,24 @@
 .about {
+    &-bg-top {
+        display: block;
+        margin-left: auto;
+        margin-bottom: 10px;
+        
+        width: 270px;
+        height: 1px;
+
+        background: #D59D40;
+    }
+
+    &-bg-down {
+        margin-top: 7px;
+
+        width: 270px;
+        height: 1px;
+
+        background: #D59D40;
+    }
+
     h2 {
         margin-right: 75px;
         text-align: center;
@@ -54,8 +74,6 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 8px;
-        margin-bottom: 17px;
 
         font-style: normal;
         font-size: 14px;
@@ -64,5 +82,42 @@
         
         text-align: center;
         letter-spacing: 0.025em;
+    }
+
+    .description1 {
+        margin-top: 7px;
+        margin-bottom: 20px;
+    }
+
+    .description2 {
+        margin-top: 6px;
+        margin-bottom: 13px;
+    }
+
+    .about-bg {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 26px;
+        margin-bottom: 99px;
+        width: 178px;
+        height: 170px;
+        background: #F0F0F0;
+    }
+
+    .about-item {
+        position: absolute;
+        top: 20px;
+        left: -45px;
+    }
+
+    .about-bg2 {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 67px;
+        width: 178px;
+        height: 179px;
+        background: #F0F0F0;
     }
 }

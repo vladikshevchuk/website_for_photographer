@@ -59,8 +59,6 @@ ul {
 }
 
 .container {
-  padding-left: 14px;
-  padding-right: 14px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -91,9 +89,20 @@ ul {
   background: #FBF5EC;
 }
 
+header .menu-button {
+  position: absolute;
+  width: 29px;
+  height: 7px;
+  margin-top: 11px;
+  margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  header .menu {
+    display: none;
+  }
+}
+
 h1 {
-  margin-left: 14px;
-  margin-right: 14px;
   font-style: normal;
   font-size: 60px;
   line-height: 78px;
@@ -103,9 +112,7 @@ h1 {
   text-align: center;
 }
 
-.hero div {
-  margin-left: -14px;
-  margin-right: -14px;
+.hero-bg {
   padding-top: 53px;
   padding-bottom: 302px;
   text-align: center;
@@ -116,11 +123,11 @@ h1 {
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero div {
+  .hero-bg {
     background-image: url(../images/bg-photo/bg-mob@2x.jpg);
   }
 }
-.hero div h2 {
+.hero-bg h2 {
   text-align: center;
   margin-left: 104px;
   margin-right: 14px;
@@ -130,7 +137,7 @@ h1 {
   letter-spacing: -0.025em;
   color: #464646;
 }
-.hero div p {
+.hero-bg p {
   width: 281px;
   display: block;
   margin-top: 48px;
@@ -176,6 +183,26 @@ h1 {
   /* or 24px */
   color: #464646;
 }
+.benefits .benefits-content-bg {
+  position: relative;
+  width: 331px;
+  height: 220px;
+  margin-left: auto;
+  background: #F0F0F0;
+}
+.benefits .benefits-content {
+  position: absolute;
+  top: -8px;
+  left: 31px;
+}
+.benefits .benefits-line {
+  position: absolute;
+  top: -77px;
+  left: 286px;
+  width: 1px;
+  height: 357px;
+  background: #D59D40;
+}
 
 .portfolio {
   height: 199px;
@@ -203,7 +230,18 @@ h1 {
   margin-top: 28px;
   padding-bottom: 47px;
 }
-.feedback div {
+.feedback-bg {
+  position: relative;
+  width: 284px;
+  height: 371px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  background: #F0F0F0;
+}
+.feedback .line {
+  position: absolute;
+  top: -61px;
   width: 285px;
   margin-left: auto;
   margin-right: auto;
@@ -427,6 +465,20 @@ h1 {
   }
 }
 
+.about-bg-top {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 10px;
+  width: 270px;
+  height: 1px;
+  background: #D59D40;
+}
+.about-bg-down {
+  margin-top: 7px;
+  width: 270px;
+  height: 1px;
+  background: #D59D40;
+}
 .about h2 {
   margin-right: 75px;
   text-align: center;
@@ -469,14 +521,44 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8px;
-  margin-bottom: 17px;
   font-style: normal;
   font-size: 14px;
   line-height: 123.1%;
   /* or 17px */
   text-align: center;
   letter-spacing: 0.025em;
+}
+.about .description1 {
+  margin-top: 7px;
+  margin-bottom: 20px;
+}
+.about .description2 {
+  margin-top: 6px;
+  margin-bottom: 13px;
+}
+.about .about-bg {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 26px;
+  margin-bottom: 99px;
+  width: 178px;
+  height: 170px;
+  background: #F0F0F0;
+}
+.about .about-item {
+  position: absolute;
+  top: 20px;
+  left: -45px;
+}
+.about .about-bg2 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 67px;
+  width: 178px;
+  height: 179px;
+  background: #F0F0F0;
 }
 
 .contacts .brides-bg {
@@ -538,7 +620,6 @@ h1 {
   width: 178px;
   height: 151px;
   margin-top: 13px;
-  margin-left: -14px;
   background-color: #F0F0F0;
 }
 
@@ -598,6 +679,7 @@ h1 {
 }
 .questions .button {
   margin-left: 27px;
+  color: #FFFFFF;
 }
 
 footer {

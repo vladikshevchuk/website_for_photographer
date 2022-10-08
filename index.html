@@ -13,28 +13,33 @@
     <!-- Шапка сайта -->
     <header>
         <nav class="container">
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="#">PHOTOGRAPHY</a>
-                </li>
-                <li>
-                    <a href="packages.html">PACKAGES</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#REVIEW">REVIEW</a>
-                </li>
-                <li>
-                    <a href="#ABOUT">ABOUT</a>
-                </li>
-                <li>
-                    <a href="#CONTACT">CONTACT</a>
-                </li>
-            </ul>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">PHOTOGRAPHY</a>
+                    </li>
+                    <li>
+                        <a href="packages.html">PACKAGES</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#REVIEW">REVIEW</a>
+                    </li>
+                    <li>
+                        <a href="#ABOUT">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#CONTACT">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <svg class="menu-button">
+                <use href="./images/symbol-defs.svg#icon-MENU" width="29px" height="7px"></use>
+            </svg>
         </nav>
     </header>
 
@@ -43,7 +48,7 @@
 
         <!-- Герой -->
         <section class="container hero">
-            <div>
+            <div class="hero-bg">
                 <h1>Our Features</h1>
                 <h2>WHY WE ARE YOUR BEST CHOICE</h2>
                 <p>Choosing a wedding coverage crew is not just about liking the visuals, it's commiting to the whole
@@ -63,10 +68,15 @@
                     <a href="#">HUGE PORTFOLIO</a>
                 </li>
                 <li>
-                    <a href="#">TEAM WORK</a>
-                    <p>Our photographers and Videographers are trained to work as one, moving simultaneously to get the best
-                        coverage possible
-                        without getting in each other’s way.</p>
+                    <div class="benefits-content-bg">
+                        <div class="benefits-content">
+                            <a href="#">TEAM WORK</a>
+                            <p>Our photographers and Videographers are trained to work as one, moving simultaneously to get the best
+                                coverage possible
+                                without getting in each other’s way.</p>
+                        </div>
+                        <div class="benefits-line"></div>
+                    </div>
                 </li>
                 <li>
                     <a href="#">BALLANCED PACKAGE</a>
@@ -128,21 +138,26 @@
                         professional about it, it really speaks volumes.</p>
                 </li>
             </ul>
-            <div>
-                <h3>TESTIMONIALS</h3>
-                <h4>FROM OUR PAST CLIENTS</h4>
-                <p class="mob">Our wedding photographers and videographers are nearly invisible on the day of event, but we shure do get all the
-                attention after, once we submit our work. We are proud to display nearly perfect scores across all of our reviewing
-                platforms including Google and WeddingWire.
-                See for yourself!</p>
-                <a href="#" class="button button-mob">READ</a>
-                <p class="desktop">We started small, and now look at us, making all these people happy with our services!</p>
-                <p class="desktop">Wedding photographers and videographers are nearly invisible on the day of event, but we shure do get all
-                    the
-                    attention
-                    after,once we submit our work. We are proud to display nearly perfect scores across all of our reviewing
-                    platforms
-                    including Google and WeddingWire. Scroll sideways to read more of them.</p>
+            <div class="feedback-bg">
+                <div class="line">
+                    <h3>TESTIMONIALS</h3>
+                    <h4>FROM OUR PAST CLIENTS</h4>
+                    <p class="mob">Our wedding photographers and videographers are nearly invisible on the day of event, but we shure do
+                        get all the
+                        attention after, once we submit our work. We are proud to display nearly perfect scores across all of our
+                        reviewing
+                        platforms including Google and WeddingWire.
+                        See for yourself!</p>
+                    <a href="#" class="button button-mob">READ</a>
+                    <p class="desktop">We started small, and now look at us, making all these people happy with our services!</p>
+                    <p class="desktop">Wedding photographers and videographers are nearly invisible on the day of event, but we shure do
+                        get all
+                        the
+                        attention
+                        after,once we submit our work. We are proud to display nearly perfect scores across all of our reviewing
+                        platforms
+                        including Google and WeddingWire. Scroll sideways to read more of them.</p>
+                </div>
             </div>
         </section>
 
@@ -262,33 +277,28 @@
 
         <!-- О нас-->
         <section class="container about">
+            <div class="about-bg-top"></div>
             <h2 id="ABOUT">something</h2>
             <h3>for everyone</h3>
             <h4>get a taste of exotic celebrations</h4>
+            <div class="about-bg-down"></div>
             <ul>
-                <li>
-                    <h5>INTERNATIONAL WEDDINGS</h4>
-                    <p>Our clients come from various ethnical backgrounds, and many of them choose to continue their
-                        families’
-                        legacies and
-                        bring their own traditions and rituals into their weddings. Since Toronto is a very multi-cultural
-                        city,
-                        we believe it
-                        is very important to highlight our expertease in covering Chinese, Korean, Sikh, and other weddings
-                        that
-                        are rich in
-                        customs.</p>
-                    <a href="#" class="button">VIEW MORE</a>
+                <li class="about-bg">
+                    <div class="about-item">
+                        <h5>DESTINATIONS WEDDINGS</h4>
+                        <p class="description1">There is something very adventurous about getting married in a foreign country,and it screamc for professional coverage
+                            that utilizes the unusual locations.</p>
+                        <a href="#" class="button">VIEW MORE</a>
+                    </div>
                 </li>
-                <li>
-                    <h5>DESTINATIONS WEDDINGS</h4>
-                    <p>We love a fine wedding somewhere downtown Toronto but we would never say no to coming somewhere warm
-                        with
-                        you. There is
-                        something very adventurous about getting married in a foreign country, it calls for professional
-                        coverage that utilizes
-                        the unusual locations.</p>
-                    <a href="#" class="button">VIEW MORE</a>
+                <li class="about-bg2">
+                    <div class="about-item">
+                        <h5>INTERNATIONAL WEDDINGS</h4>
+                        <p class="description2">Our clients come from various ethnical backgrounds, and many of them choose to continue their families’ legacies and
+                            bring their own traditions and rituals into their weddings. Explore your own take on these
+                            custon-rich celebrations.</p>
+                        <a href="#" class="button">VIEW MORE</a>
+                    </div>
                 </li>
             </ul>
         </section>

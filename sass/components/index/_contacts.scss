@@ -78,7 +78,7 @@
     width: 178px;
     height: 151px;
     margin-top: 13px;
-    margin-left: -14px;
+
     background-color: #F0F0F0;
 }
 
@@ -87,13 +87,8 @@
     display: flex;
     top: 20px;
     left: 15px;
-    // margin-top: 13px;
-
 
     address {
-        // padding-top: 36px;
-        // padding-bottom: 33px;
-        
         @media screen and (min-width: 375px) {
             margin-left: 30px;
         }
@@ -143,6 +138,7 @@
 
     .button {
         margin-left: 27px;
+        color: #FFFFFF;
     }
 
 }
