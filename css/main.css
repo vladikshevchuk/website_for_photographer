@@ -107,17 +107,102 @@ ul {
   background: #FBF5EC;
 }
 
-header .menu-button {
+header .menu-toggle {
   position: absolute;
+  top: 11px;
+  right: 14px;
+  border: 0;
+  padding: 0;
+  background: rgba(213, 157, 64, 0);
+}
+header .menu-toggle:hover .menu-icon {
+  cursor: pointer;
+}
+header .menu-icon {
   width: 29px;
   height: 7px;
-  margin-top: 11px;
-  margin-left: auto;
 }
 @media screen and (max-width: 767px) {
   header .menu {
     display: none;
   }
+}
+header .menu-item {
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 0.055em;
+  color: #0D0A09;
+}
+
+.menu-toggle {
+  position: absolute;
+  right: 14px;
+  border: 0;
+  padding: 0;
+  background: rgba(213, 157, 64, 0);
+  fill: rgba(213, 157, 64, 0);
+}
+.menu-toggle:hover .menu-icon {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: rgb(249, 244, 236);
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #0D0A09;
+  text-decoration: none;
+}
+.mobile-menu .use {
+  color: rgb(213, 157, 64);
+}
+
+.close {
+  fill: #D59D40;
 }
 
 h1 {

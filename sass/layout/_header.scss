@@ -1,17 +1,33 @@
 header {
-    .menu-button {
+    .menu-toggle {
         position: absolute;
+        top: 11px;
+        right: 14px;
+        border: 0;
+        padding: 0;
+        background: rgba(213, 157, 64, 0);
+
+        &:hover .menu-icon {
+            cursor: pointer;
+        }
+    }
+
+    .menu-icon {
         width: 29px;
         height: 7px;
-        margin-top: 11px;
-        margin-left: auto;
-        // left: 332px;
-
     }
 
     .menu {
         @media screen and (max-width: 767px) {
             display: none;
         }
+    }
+
+    .menu-item {
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0.055em;
+        
+        color: #0D0A09;
     }
 }

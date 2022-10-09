@@ -16,30 +16,32 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="index.html">HOME</a>
+                        <a class="menu-item" href="index.html">HOME</a>
                     </li>
                     <li>
-                        <a href="#">PHOTOGRAPHY</a>
+                        <a class="menu-item" href="#">PHOTOGRAPHY</a>
                     </li>
                     <li>
-                        <a href="packages.html">PACKAGES</a>
+                        <a class="menu-item" href="packages.html">PACKAGES</a>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <a href="#REVIEW">REVIEW</a>
+                        <a class="menu-item" href="#REVIEW">REVIEW</a>
                     </li>
                     <li>
-                        <a href="#ABOUT">ABOUT</a>
+                        <a class="menu-item" href="#ABOUT">ABOUT</a>
                     </li>
                     <li>
-                        <a href="#CONTACT">CONTACT</a>
+                        <a class="menu-item" href="#CONTACT">CONTACT</a>
                     </li>
                 </ul>
             </div>
-            <svg class="menu-button">
-                <use href="./images/symbol-defs.svg#icon-MENU" width="29px" height="7px"></use>
-            </svg>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-icon">
+                    <use href="./images/symbol-defs.svg#icon-MENU" width="29px" height="7px"></use>
+                </svg>
+            </button>
         </nav>
     </header>
 
@@ -352,5 +354,45 @@
         <p>Copyright Tara Weddings 2019. All rights reserved.
         Wedding photography and videography in Toronto</p>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="close" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    
+        <div class="mobile-menu">
+            <ul>
+                <li>
+                    <a class="menu-item link use" href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a class="menu-item link" href="#">PHOTOGRAPHY</a>
+                </li>
+                <li>
+                    <a class="menu-item link" href="packages.html">PACKAGES</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="menu-item link" href="#REVIEW">REVIEW</a>
+                </li>
+                <li>
+                    <a class="menu-item link" href="#ABOUT">ABOUT</a>
+                </li>
+                <li>
+                    <a class="menu-item link" href="#CONTACT">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
