@@ -612,8 +612,10 @@ h1 {
   }
 }
 @media screen and (min-width: 768px) {
-  .info-btn .button {
-    margin-right: 54px;
+  .info-btn .button-2 {
+    margin-left: 57px;
+    padding-left: 67px;
+    padding-right: 67px;
   }
 }
 @media screen and (min-width: 768px) {
