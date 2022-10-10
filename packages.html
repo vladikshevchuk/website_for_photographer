@@ -53,11 +53,15 @@
 
         <!-- Наименования пакетов -->
         <section class="container ofers">
-            <img srcset="./images/packages/MAIN_PICTURE.jpg 1x, ./images/packages/MAIN_PICTURE@2x.jpg 2x" src="./images/packages/MAIN_PICTURE.jpg" alt="wedding" width="100%">
-            <h2>Packages</h2>
-            <h3 class="ofers-h3">PHOTO+VIDEO</h3>
+            <div class="ofers-header">
+                <div class="picture"></div>
+                <div class="ofers-position">
+                    <h2>Packages</h2>
+                    <h3 class="ofers-h3">PHOTO+VIDEO</h3>
+                </div>
+            </div>
             <p class="ofer-p">Choose one of our premade packages or build your own. Slide to view photo-only and video-only packages.</p>
-            <ul>
+            <ul class="prices">
                 <li class="item-1">
                     <h4>LUCKY</h4>
                     <p class="item-p">8 hours</p>
@@ -76,8 +80,8 @@
                     <p class="item-p">Photo booth</p>
                     <p class="item-p">Same day video edit</p>
                     <p class="item-p">Thank You cards</p>
-                    <p class="item-p">$5,500</p>
-                    <p class="item-p">$4,400</p>
+                    <p class="price-off">$5,500</p>
+                    <p class="price-on">$4,400<span>*</span></p>
                 </li>
                 <li class="item-2">
                     <h4>LEGENDARY</h4>
@@ -89,19 +93,20 @@
                     <p class="item-p">Wedding short film (30mins)</p>
                     <p class="item-p">Online gallery</p>
                     <p class="item-p">Engagement shoot</p>
-                    <p class="item-p">Engagement album</p>
+                    <p class="item-p item-grey">Engagement album</p>
                     <p class="item-p">Wedding album (20 pgs)</p>
-                    <p class="item-p">Canvas print</p>
-                    <p class="item-p">Parent albums</p>
+                    <p class="item-p item-grey">Canvas print</p>
+                    <p class="item-p item-grey">Parent albums</p>
                     <p class="item-p">Aerial coverage</p>
-                    <p class="item-p">Photo booth</p>
-                    <p class="item-p">Same day video edit</p>
-                    <p class="item-p">Thank You cards</p>
-                    <p class="item-p">$6,500</p>
-                    <p class="item-p">$5,200</p>
+                    <p class="item-p item-grey">Photo booth</p>
+                    <p class="item-p item-grey">Same day video edit</p>
+                    <p class="item-p item-grey">Thank You cards</p>
+                    <p class="price-off">$6,500</p>
+                    <p class="price-on">$5,200<span>*</span></p>
+
                 </li>
                 <li class="item-3">
-                    <h4>EPIC</h4>
+                    <h4><span>Bestseller</span><br>EPIC</h4>
                     <p class="item-p">13 hours</p>
                     <p class="item-p">Photography solo</p>
                     <p class="item-p">Videography solo</p>
@@ -112,14 +117,14 @@
                     <p class="item-p">Engagement shoot</p>
                     <p class="item-p">Engagement album</p>
                     <p class="item-p">Wedding album (20 pgs)</p>
-                    <p class="item-p">Canvas print</p>
-                    <p class="item-p">Parent albums</p>
+                    <p class="item-p item-grey">Canvas print</p>
+                    <p class="item-p item-grey">Parent albums</p>
                     <p class="item-p">Aerial coverage</p>
-                    <p class="item-p">Photo booth</p>
-                    <p class="item-p">Same day video edit</p>
+                    <p class="item-p item-grey">Photo booth</p>
+                    <p class="item-p item-grey">Same day video edit</p>
                     <p class="item-p">Thank You cards</p>
-                    <p class="item-p">$9,000</p>
-                    <p class="item-p">$7,200</p>
+                    <p class="price-off">$9,000</p>
+                    <p class="price-on">$7,200<span>*</span></p>
                 </li>
                 <li class="item-4">
                     <h4>EPIC <br>
@@ -149,17 +154,19 @@
                 </li>
             </ul>
             <div>
-                <div class="information">
-                    <div class="info-abs">
-                        <h3>END OF BOOKING SEASON SPECIAL!</h3>
-                        <p>Valid for 2019-2021 weddings. Offer ends June9,2019.Non transferable.</p>
-                    </div>
+                <div class="info-abs">
+                    <span>*</span>
+                    <div class="information"></div>
+                    <h3>END OF BOOKING SEASON SPECIAL!</h3>
+                    <p>Valid for 2019-2021 weddings. Offer ends June9,2019.Non transferable.</p>
                 </div>
                 <div class="info-btn">
                     <p>Taxes and travel fees are not included.
                         Package splitting fee- $600/day.</p>
-                    <a href="#" class="button">CUSTOMIZE</a>
-                    <a href="#" class="button">CONTACT</a>
+                    <div>
+                        <a href="#" class="button">CUSTOMIZE</a>
+                        <a href="#" class="button">CONTACT</a>
+                    </div>
                 </div>
             </div>
         </section>
