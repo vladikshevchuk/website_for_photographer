@@ -2,122 +2,244 @@
     &-bg-top {
         display: block;
         margin-left: auto;
-        margin-bottom: 10px;
-        
-        width: 270px;
-        height: 1px;
 
         background: #D59D40;
+
+        @media screen and (max-width: 767px) {
+            width: 270px;
+            height: 1px;
+
+            margin-bottom: 10px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 553px;
+            height: 2px;
+
+            margin-bottom: 14px;
+        }
     }
 
     &-bg-down {
-        margin-top: 7px;
-
-        width: 270px;
-        height: 1px;
-
         background: #D59D40;
+
+        @media screen and (max-width: 767px) {
+            width: 270px;
+            height: 1px;
+
+            margin-top: 7px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 553px;
+            height: 2px;
+
+            margin-top: 43px;
+        }
     }
 
     h2 {
         margin-right: 75px;
-        text-align: center;
 
         font-style: italic;
-        font-size: 35px;
-        line-height: 45px;
         letter-spacing: -0.06em;
         text-transform: uppercase;
         
         color: #D59D40;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+        @media screen and (min-width: 768px) {
+            text-align: right;
+
+            font-size: 60px;
+            line-height: 78px;
+            /* identical to box height */
+        }
     }
 
     h3 {
-        margin-left: 70px;
-        text-align: center;
 
-        font-size: 30px;
-        font-style: normal;
-        line-height: 39px;
-        /* identical to box height */
         
         color: #464646;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+            margin-left: 70px;
+
+            font-size: 30px;
+            line-height: 39px;
+            /* identical to box height */
+        }
+
+        @media screen and (min-width: 768px) {
+            text-align: right;
+            margin-right: 75px;
+
+            font-size: 45px;
+            line-height: 58px;
+            letter-spacing: -0.015em;
+        }
     }
 
     h4 {
-        margin-left: 70px;
-        text-align: center;
-
-        font-size: 9px;
-        font-style: normal;
-        line-height: 110.6%;
-        /* identical to box height, or 10px */
-        
         letter-spacing: -0.055em;
         text-transform: uppercase;
         
         color: #464646;
+
+        @media screen and (max-width: 767px) {
+            margin-left: 70px;
+            text-align: center;
+
+            font-size: 9px;
+            line-height: 110.6%;
+            /* identical to box height, or 10px */
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-right: 58px;
+            text-align: right;
+
+            font-size: 20px;
+            line-height: 110.6%;
+            /* or 22px */
+        }
     }
 
     h5 {
         text-align: center;
 
-        font-size: 18px;
-        font-style: normal;
-        line-height: 23px;
-        
         color: #D59D40;
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 25px;
+            line-height: 32px;
+        }
     }
 
     p {
-        width: 269px;
         display: block;
         margin-left: auto;
         margin-right: auto;
 
-        font-style: normal;
-        font-size: 14px;
-        line-height: 123.1%;
-        /* or 17px */
-        
-        text-align: center;
-        letter-spacing: 0.025em;
+        text-align: center;     
+
+        @media screen and (max-width: 767px) {
+            width: 269px;
+
+            font-size: 14px;
+            line-height: 123.1%;
+            /* or 17px */
+            letter-spacing: 0.025em;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 464px;
+
+            font-size: 22px;
+            line-height: 113.6%;
+            /* or 25px */
+        }
     }
 
     .description1 {
-        margin-top: 7px;
-        margin-bottom: 20px;
+        @media screen and (max-width: 767px) {
+            margin-top: 7px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-top: 33px;
+            margin-bottom: 70px;
+        }
     }
 
     .description2 {
-        margin-top: 6px;
-        margin-bottom: 13px;
+        @media screen and (max-width: 767px) {
+            margin-top: 6px;
+            margin-bottom: 13px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-top: 24px;
+            margin-bottom: 45px;
+        }
     }
 
     .about-bg {
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 26px;
-        margin-bottom: 99px;
-        width: 178px;
-        height: 170px;
+        
+        
         background: #F0F0F0;
+
+        @media screen and (max-width: 767px) {
+            width: 178px;
+            height: 170px;
+
+            margin-top: 26px;
+            margin-bottom: 99px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 291px;
+            height: 271px;
+            
+            margin-top: 44px;
+            margin-bottom: 90px;
+        }
     }
 
     .about-item {
         position: absolute;
-        top: 20px;
-        left: -45px;
+        
+        @media screen and (max-width: 767px) {
+            top: 20px;
+            left: -45px;
+        }
+
+        @media screen and (min-width: 768px) {
+            top: 19px;
+            left: -84px;
+        }
     }
 
     .about-bg2 {
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 67px;
-        width: 178px;
-        height: 179px;
         background: #F0F0F0;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 67px;
+            width: 178px;
+            height: 179px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 81px;
+            width: 291px;
+            height: 288px;
+        }
+    }
+
+    .button {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            font-size: 20px;
+            line-height: 26px;
+            /* identical to box height */
+        }
     }
 }

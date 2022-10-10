@@ -1,26 +1,45 @@
 .feedback {
-    margin-top: 28px;
-    padding-bottom: 47px;
+    @media screen and (max-width: 767px) {
+        margin-top: 28px;
+        padding-bottom: 47px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 45px;
+        
+    }
 
     &-bg {
-        position: relative;
-        width: 284px;
-        height: 371px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 90px;
-        background: #F0F0F0;
+        @media screen and (max-width: 767px) {
+            position: relative;
+            width: 284px;
+            height: 371px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 90px;
+            background: #F0F0F0;
+        }
     }
 
     .line {
-        position: absolute;
-        top: -61px;
-        width: 285px;
         margin-left: auto;
         margin-right: auto;
 
-        padding-top: 46px;
-        border-top: 1px solid #D59D40;
+        @media screen and (max-width: 767px) {
+            position: absolute;
+            top: -61px;
+            width: 285px;
+            
+            padding-top: 46px;
+            border-top: 1px solid #D59D40;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 594px;
+            padding-top: 16px;
+            
+            border-top: 2px solid #D59D40;
+        }
     }
 
     h2 {
@@ -33,13 +52,38 @@
             }
     }
 
-    h3 {
+    .feedback-h3 {
         text-align: center;
 
-        font-style: normal;
-        font-size: 25px;
-        line-height: 32px;
-        letter-spacing: 0.055em;
+        @media screen and (max-width: 767px) {
+            font-size: 25px;
+            line-height: 32px;
+            letter-spacing: 0.055em;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-style: italic;
+            font-size: 41px;
+            line-height: 53px;
+            /* identical to box height */
+            
+            letter-spacing: -0.025em;
+        }
+    }
+
+    .comments-h3 {
+        @media screen and (min-width: 768px) {
+            text-align: center;
+
+            line-height: 39px;
+            font-size: 30px;
+            /* identical to box height */
+            
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            
+            color: #D59D40;
+        }
     }
 
     h4 {
@@ -47,16 +91,22 @@
         margin-left: 20px;
 
         font-style: italic;
-        font-weight: 400;
-        font-size: 20px;
         line-height: 107.1%;
-        /* or 21px */
         
         text-transform: lowercase;
+
+        @media screen and (max-width: 767px) {
+            font-size: 20px;
+            /* or 21px */
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 25px;
+            /* identical to box height, or 27px */
+        }
     }
 
     .mob {
-        width: 216px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -70,10 +120,36 @@
         
         text-align: center;
         letter-spacing: 0.025em;
+
+        @media screen and (max-width: 767px) {
+            width: 216px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 600px;
+        }
+    }
+
+    .comments-p {
+        width: 410px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 34px;
+
+        font-size: 22px;
+        line-height: 113.6%;
+        /* or 25px */
+    }
+
+    .comments-hidden {
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
     }
 
     .button-mob {
-        @media screen and (min-width: 1600px) {
+        @media screen and (min-width: 768px) {
                 display: none;
             }
     }
