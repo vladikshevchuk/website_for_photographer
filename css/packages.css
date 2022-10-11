@@ -121,6 +121,7 @@ ul {
 }
 
 header .menu-toggle {
+  z-index: 100;
   position: absolute;
   top: 11px;
   right: 14px;
@@ -629,12 +630,27 @@ h1 {
   }
 }
 
-.create {
-  margin-top: 200px;
+@media screen and (max-width: 767px) {
+  .create {
+    margin-top: 200px;
+  }
 }
-.create .create-content {
-  margin-left: 35px;
-  margin-right: 36px;
+@media screen and (min-width: 768px) {
+  .create {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .create .create-content {
+    margin-left: 35px;
+    margin-right: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .create .create-content {
+    margin-left: 82px;
+    margin-right: 56px;
+  }
 }
 .create .create-content-photo {
   margin-top: 51px;
@@ -648,41 +664,82 @@ h1 {
 .create h2 {
   position: relative;
   text-align: center;
-  font-style: normal;
-  font-size: 65px;
-  line-height: 84px;
-  /* identical to box height */
-  letter-spacing: -0.045em;
   color: #464646;
+}
+@media screen and (max-width: 767px) {
+  .create h2 {
+    font-size: 65px;
+    line-height: 84px;
+    /* identical to box height */
+    letter-spacing: -0.045em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .create h2 {
+    font-size: 80px;
+    line-height: 103px;
+  }
 }
 .create h3 {
   text-align: center;
   margin-top: -20px;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 21px;
-  /* identical to box height */
-  letter-spacing: -0.02em;
   color: #D59D40;
+}
+@media screen and (max-width: 767px) {
+  .create h3 {
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .create h3 {
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height */
+  }
 }
 .create h4 {
   font-style: italic;
-  font-size: 25px;
-  line-height: 32px;
-  letter-spacing: -0.08em;
-  color: #464646;
+}
+@media screen and (max-width: 767px) {
+  .create h4 {
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: -0.08em;
+    color: #464646;
+  }
+}
+@media screen and (min-width: 768px) {
+  .create h4 {
+    font-size: 26px;
+    line-height: 111.6%;
+    /* identical to box height, or 29px */
+  }
 }
 .create h5 {
   font-family: "Antic Didone";
-  font-size: 15px;
   line-height: 113.6%;
-  /* identical to box height, or 17px */
   color: #464646;
+}
+@media screen and (max-width: 767px) {
+  .create h5 {
+    font-size: 15px;
+    /* identical to box height, or 17px */
+  }
+}
+@media screen and (min-width: 768px) {
+  .create h5 {
+    font-size: 22px;
+    /* identical to box height, or 25px */
+    letter-spacing: 0.025em;
+  }
 }
 .create .h5-show {
   color: #D59D40;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .create .create-description {
     display: none;
   }
@@ -690,20 +747,43 @@ h1 {
 .create .create-description-show {
   margin-top: 4.51px;
   font-style: italic;
-  font-size: 14px;
-  line-height: 91.6%;
 }
 @media screen and (min-width: 375px) {
   .create .create-description-show {
     width: 236px;
   }
 }
+@media screen and (max-width: 767px) {
+  .create .create-description-show {
+    font-size: 14px;
+    line-height: 91.6%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .create .create-description-show {
+    width: 352px;
+    font-size: 22px;
+    line-height: 110%;
+    /* or 24px */
+  }
+}
 .create .create-price {
   font-style: italic;
-  font-size: 23px;
-  line-height: 113.6%;
-  /* or 26px */
   color: #464646;
+}
+@media screen and (max-width: 767px) {
+  .create .create-price {
+    font-size: 23px;
+    line-height: 113.6%;
+    /* or 26px */
+  }
+}
+@media screen and (min-width: 768px) {
+  .create .create-price {
+    font-size: 41px;
+    line-height: 53px;
+    letter-spacing: -0.025em;
+  }
 }
 .create .create-item {
   display: -webkit-box;
@@ -715,33 +795,76 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 25px;
+}
+@media screen and (max-width: 767px) {
+  .create .create-item {
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .create .create-item {
+    margin-top: 40px;
+  }
 }
 .create .create-item-show {
   margin-left: -16px;
-  margin-right: -36px;
   padding-left: 16px;
-  padding-right: 36px;
   padding-bottom: 16px;
   background: #F0F0F0;
 }
+@media screen and (max-width: 767px) {
+  .create .create-item-show {
+    margin-right: -36px;
+    padding-right: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .create .create-item-show {
+    margin-right: -56px;
+    padding-right: 56px;
+  }
+}
 .create .creat-line {
-  height: 1px;
-  margin-left: 26px;
-  margin-right: 26px;
   background: #D59D40;
+}
+@media screen and (max-width: 767px) {
+  .create .creat-line {
+    height: 1px;
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .create .creat-line {
+    height: 2px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 .create .comma {
   position: absolute;
-  top: -60%;
-  left: 15%;
-  font-size: 60px;
-  line-height: 78px;
-  /* identical to box height */
   letter-spacing: 0.055em;
   color: #D59D40;
   -webkit-transform: rotate(-93.32deg);
           transform: rotate(-93.32deg);
+}
+@media screen and (max-width: 767px) {
+  .create .comma {
+    top: -60%;
+    left: 15%;
+    font-size: 60px;
+    line-height: 78px;
+    /* identical to box height */
+  }
+}
+@media screen and (min-width: 768px) {
+  .create .comma {
+    top: -45%;
+    left: 27%;
+    font-size: 60px;
+    line-height: 78px;
+    /* identical to box height */
+  }
 }
 
 footer {
