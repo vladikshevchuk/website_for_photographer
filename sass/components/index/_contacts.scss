@@ -34,6 +34,23 @@
                     background-image: url(../images/brides/brides-tab@2x.jpg);
                 }
         }
+
+        @media screen and (min-width: 1200px) {
+            height: 1262px;
+            padding-top: 1090px;
+            
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0),
+                    rgba(47, 48, 58, 0)),
+                    url(../images/brides/brides-desk.jpg);
+            
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/brides/brides-desk@2x.jpg);
+                }
+        }
         
         background-repeat: no-repeat;
         background-position: center;
@@ -50,6 +67,10 @@
 
         @media screen and (min-width: 768px) {
             width: 415.2px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 1038px;
         }
     }
 
@@ -73,6 +94,12 @@
         @media screen and (min-width: 768px) {
             font-size: 50px;
             line-height: 65px;
+            /* identical to box height */
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 125px;
+            line-height: 162px;
             /* identical to box height */
         }
     }
@@ -100,6 +127,15 @@
             line-height: 26px;
             /* identical to box height */
         }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 400px;
+            font-size: 41px;
+            line-height: 53px;
+            /* identical to box height */
+            
+            letter-spacing: -0.025em;
+        }
     }
 
     a {
@@ -115,6 +151,14 @@
             line-height: 113.6%;
             font-size: 22px;
             /* identical to box height, or 25px */
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 31px;
+            line-height: 40px;
+            /* identical to box height */
+            
+            letter-spacing: -0.08em;
         }
     }
 }
@@ -136,6 +180,12 @@
         height: 257px;
         margin-top: 46px;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        height: 345px;
+        margin-top: 87px;
+    }
 }
 
 .communicate {
@@ -153,6 +203,10 @@
         @media screen and (min-width: 768px) {
             margin-left: 65px;
             margin-top: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 195px;
         }
 
         a {
@@ -178,6 +232,12 @@
                 width: 30px;
                 height: 30px;
                 margin-left: 10px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                width: 60px;
+                height: 60px;
+                margin-left: 86px;
             }
         }
     }
@@ -220,6 +280,16 @@
             margin-left: 80px;
         }
 
+        @media screen and (min-width: 1200px) {
+            width: 460px;
+
+            font-size: 24px;
+            line-height: 126.6%;
+            /* or 30px */
+            
+            letter-spacing: 0.015em;
+        }
+
 
     }
 
@@ -233,6 +303,10 @@
         @media screen and (min-width: 768px) {
             margin-top: 30px;
             margin-left: 110px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 80px;
         }
     }
 

@@ -14,7 +14,7 @@
             letter-spacing: -0.08em;
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
             width: 476px;
             display: block;
             margin-left: auto;
@@ -24,6 +24,14 @@
             font-size: 80px;
             line-height: 103px;
             text-align: right;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 125px;
+            line-height: 162px;
+            /* identical to box height */
+            
+            letter-spacing: -0.045em;
         }
     }
 
@@ -43,12 +51,23 @@
             text-transform: uppercase;
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
             margin-top: -16px;
 
             font-size: 25px;
             line-height: 32px;
             letter-spacing: 0.055em;
+        }
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+            margin-top: 8px;
+
+            font-size: 41px;
+            line-height: 53px;
+            /* identical to box height */
+            
+            letter-spacing: -0.025em;
         }
     }
 
@@ -57,7 +76,7 @@
             display: none;
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) and (max-width:1199px) {
             width: 645px;
             display: block;
             margin-left: auto;
@@ -69,6 +88,16 @@
             font-size: 24px;
             line-height: 111.6%;
             /* or 27px */
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 8px;
+
+            font-size: 28px;
+            line-height: 126.6%;
+            /* or 35px */
+            
+            letter-spacing: 0.015em;
         }
     }
 
@@ -97,14 +126,78 @@
         }
     }
 
+    .gallary-desk {
+        display: none;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            margin-top: 75px;
+        }
+    }
+
     .gallary-button {
         position: absolute;
         bottom: -8%;
+
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
+    }
+
+    .gallary-position {
+        position: relative;
     }
 
     .examples {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 1200px;
+        height: 724px;
+        padding-top: 225px;
+
+        transform: translate(-50%, -50%);
+
+        background: rgba(255, 255, 255, 0.65);
+
+        h3 {
+            text-align: center;
+
+            font-size: 41px;
+            line-height: 53px;
+            /* identical to box height */
+            
+            letter-spacing: -0.025em;
+            
+            color: #464646;
+        }
+
+        p {
+            width: 382.68px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 37px;
+
+            font-size: 24px;
+            line-height: 107.1%;
+            /* or 26px */
+            
+            text-align: center;
+            letter-spacing: 0.06em;
+        }
+
         @media screen and (max-width: 1199px) {
             display: none;
+        }
+    }
+
+    .wedding-desk {
+        @media screen and (min-width: 1200px) {
+            width: 1050px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }

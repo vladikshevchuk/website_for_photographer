@@ -35,6 +35,23 @@
                 background-image: url(../images/packages/packages-tab@2x.jpg);
             }
         }
+
+        @media screen and (min-width: 1200px) {
+            height: 470px;
+            margin-top: 90px;
+            
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0),
+                    rgba(47, 48, 58, 0)),
+                url(../images/packages/packages-desk.jpg);
+            
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/packages/packages-desk@2x.jpg);
+            }
+        }
         
         background-repeat: no-repeat;
         background-position: center;
@@ -70,6 +87,16 @@
 
             text-align: center;
         }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 64px;
+            line-height: 83px;
+            /* identical to box height */
+            
+            letter-spacing: -0.035em;
+            
+            color: #FFFFFF;
+        }
     }
 
     h3 {
@@ -94,6 +121,16 @@
 
             font-size: 25px;
             line-height: 32px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 16px;
+
+            font-size: 24px;
+            line-height: 31px;
+            /* identical to box height */
+            
+            letter-spacing: 0.055em;
         }
     }
 
@@ -133,6 +170,19 @@
             line-height: 111.6%;
             /* or 27px */
         }
+
+        @media screen and (min-width: 1200px) {
+            width: 448px;
+            margin-top: 0px;
+            margin-bottom: 24px;
+            margin-left: -22px;
+            padding-top: 17px;
+            font-size: 24px;
+            line-height: 107.1%;
+            /* or 26px */
+            
+            letter-spacing: 0.06em;
+        }
     }
 
     .button {
@@ -164,6 +214,14 @@
             transform: translate(-50%, );
             
             background: rgba(244, 244, 244, 0.8);
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 404px;
+            padding-top: 78px;
+            padding-bottom: 79px;
+
+            transform: translate(-50%, -10%);
         }
     }
 }
