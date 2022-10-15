@@ -34,7 +34,11 @@ h1  {
                 (min-resolution: 2dppx) {
                     background-image: url(../images/packages/MAIN_PICTURE-tab@2x.jpg);
                 }
-            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
 
         background-repeat: no-repeat;
         background-position: center;
@@ -60,6 +64,14 @@ h1  {
             line-height: 103px;
             
             color: #FFFFFF;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 170px;
+            line-height: 220px;
+            letter-spacing: -0.05em;
+            
+            color: #464646;
         }
     }
 
@@ -87,6 +99,12 @@ h1  {
             line-height: 26px;
             /* identical to box height */
         }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 41px;
+            line-height: 53px;
+            letter-spacing: -0.025em;
+        }
     }
 
     .ofer-p {
@@ -112,6 +130,15 @@ h1  {
             /* or 29px */
             
             text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 876px;
+            margin-top: 100px;
+
+            font-size: 33px;
+            line-height: 130.6%;
+            /* or 43px */
         }
     }
 
@@ -148,17 +175,63 @@ h1  {
         }
     }
 
+    // desktop
+    .item-1 {
+        padding-top: 45px;
+    }
+
+    .item-2 {
+        @media screen and (min-width: 1200px) {
+            height: 942.5px;
+            padding-top: 45px;
+            border-left: 4px solid #D59D40;
+        }
+    }
+
     .item-3 {
-        padding-left: 40px;
-        border-left: 4px solid #D59D40;
+        @media screen and (min-width: 1200px) {
+            border-left: 4px solid #D59D40;
+        }
+    }
+
+    .item-4 {
+        @media screen and (min-width: 1200px) {
+            height: 942.5px;
+            padding-top: 45px;
+            border-left: 4px solid #D59D40;
+        }
+
+        .h4-mob {
+            @media screen and (min-width: 1200px) {
+                display: none;
+            }
+        }
+
+        .h4-desk {
+            span {
+                font-size: 41px;
+                line-height: 53px;
+                letter-spacing: -0.025em;
+            }
+
+            @media screen and (max-width: 1199px) {
+                display: none;
+            }
+        }
     }
 
     .prices {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
             display: flex;
             justify-content: space-evenly;
             height: 865px;
             align-items: flex-end;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            margin-top: 130px;
+            justify-content: space-around;
         }
 
     }
@@ -192,6 +265,12 @@ h1  {
                 /* identical to box height */
             }
         }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: 47px;
+            letter-spacing: -0.025em;
+        }
     }
 
     .item-p {
@@ -209,6 +288,12 @@ h1  {
             font-size: 22px;
             line-height: 159.1%;
             /* or 35px */
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 23px;
+            line-height: 167.1%;
+            /* or 38px */
         }
     }
 
@@ -246,6 +331,13 @@ h1  {
             line-height: 52px;
             /* identical to box height */
         }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 40px;
+
+            font-size: 50px;
+            line-height: 65px;
+        }
     }
 
     .price-on {
@@ -272,17 +364,34 @@ h1  {
             line-height: 78px;
             /* identical to box height */
         }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 8px;
+
+            font-size: 70px;
+            line-height: 91px;
+            letter-spacing: -0.025em;
+        }
     }
 
     // styles
     .creat-line-mob {
-        margin-bottom: 10px;
-        margin-top: 10px;
-        height: 1px;
-        margin-left: 51px;
-        margin-right: 51px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            height: 1px;
+            margin-left: 51px;
+            margin-right: 51px;
+            
+            background: #D59D40;
+        }
+    }
 
-        background: #D59D40;
+    .div-info {
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
     }
 }
 
@@ -304,6 +413,11 @@ h1  {
 
         border: 2px solid #BEBEBE;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 457.17px;
+        height: 170.64px;
+    }
 }
 
 .info-abs {
@@ -321,7 +435,7 @@ h1  {
         padding-top: 23px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 641px;
 
         margin-top: 41px;
@@ -351,6 +465,11 @@ h1  {
             line-height: 65px;
         }
 
+        @media screen and (min-width: 1200px) {
+            font-size: 20px;
+            line-height: 26px;
+        }
+
     }
 
     h3 {
@@ -374,7 +493,15 @@ h1  {
             
             letter-spacing: 0.01em;
         }
+
+        @media screen and (min-width: 1200px) {
+            width: 418px;
+
+            font-size: 37px;
+            line-height: 48px;
+            letter-spacing: 0.01em;
         }
+    }
     
     p {
         font-style: italic;
@@ -393,6 +520,14 @@ h1  {
             font-size: 16px;
             line-height: 113.6%;
             /* or 18px */
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 327px;
+
+            font-size: 20px;
+            line-height: 113.6%;
+            /* or 23px */
         }
     }
 }
@@ -425,6 +560,13 @@ h1  {
             
             letter-spacing: 0.06em;
         }
+
+        @media screen and (min-width: 1200px) {
+            line-height: 120.1%;
+            ont-size: 35px;
+            /* or 42px */
+            letter-spacing: 0.02em;
+        }
     }
 
     .button {
@@ -432,12 +574,16 @@ h1  {
             margin-bottom: 32px;
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
             &-2 {
                 margin-left: 57px;
                 padding-left: 67px;
                 padding-right: 67px;
             }
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 5px, 10px;
         }
     }
 

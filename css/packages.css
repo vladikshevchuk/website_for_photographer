@@ -283,6 +283,11 @@ h1 {
     background-image: url(../images/packages/MAIN_PICTURE-tab@2x.jpg);
   }
 }
+@media screen and (min-width: 1200px) {
+  .ofers .picture {
+    display: none;
+  }
+}
 .ofers h2 {
   text-align: center;
   margin-top: 44px;
@@ -301,6 +306,14 @@ h1 {
     font-size: 80px;
     line-height: 103px;
     color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ofers h2 {
+    font-size: 170px;
+    line-height: 220px;
+    letter-spacing: -0.05em;
+    color: #464646;
   }
 }
 .ofers .ofers-h3 {
@@ -326,6 +339,13 @@ h1 {
     /* identical to box height */
   }
 }
+@media screen and (min-width: 1200px) {
+  .ofers .ofers-h3 {
+    font-size: 41px;
+    line-height: 53px;
+    letter-spacing: -0.025em;
+  }
+}
 .ofers .ofer-p {
   display: block;
   margin-left: auto;
@@ -348,6 +368,15 @@ h1 {
     line-height: 111.6%;
     /* or 29px */
     text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ofers .ofer-p {
+    width: 876px;
+    margin-top: 100px;
+    font-size: 33px;
+    line-height: 130.6%;
+    /* or 43px */
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -377,11 +406,44 @@ h1 {
     display: none;
   }
 }
-.ofers .item-3 {
-  padding-left: 40px;
-  border-left: 4px solid #D59D40;
+.ofers .item-1 {
+  padding-top: 45px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .ofers .item-2 {
+    height: 942.5px;
+    padding-top: 45px;
+    border-left: 4px solid #D59D40;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ofers .item-3 {
+    border-left: 4px solid #D59D40;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ofers .item-4 {
+    height: 942.5px;
+    padding-top: 45px;
+    border-left: 4px solid #D59D40;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ofers .item-4 .h4-mob {
+    display: none;
+  }
+}
+.ofers .item-4 .h4-desk span {
+  font-size: 41px;
+  line-height: 53px;
+  letter-spacing: -0.025em;
+}
+@media screen and (max-width: 1199px) {
+  .ofers .item-4 .h4-desk {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .ofers .prices {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -393,6 +455,16 @@ h1 {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ofers .prices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 130px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 .ofers h4 {
@@ -423,6 +495,13 @@ h1 {
     /* identical to box height */
   }
 }
+@media screen and (min-width: 1200px) {
+  .ofers h4 {
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: -0.025em;
+  }
+}
 .ofers .item-p {
   text-align: center;
   color: #464646;
@@ -439,6 +518,13 @@ h1 {
     font-size: 22px;
     line-height: 159.1%;
     /* or 35px */
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ofers .item-p {
+    font-size: 23px;
+    line-height: 167.1%;
+    /* or 38px */
   }
 }
 .ofers .item-grey {
@@ -473,6 +559,13 @@ h1 {
     /* identical to box height */
   }
 }
+@media screen and (min-width: 1200px) {
+  .ofers .price-off {
+    margin-top: 40px;
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
 .ofers .price-on {
   font-size: 55px;
   line-height: 71px;
@@ -497,13 +590,34 @@ h1 {
     /* identical to box height */
   }
 }
-.ofers .creat-line-mob {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  height: 1px;
-  margin-left: 51px;
-  margin-right: 51px;
-  background: #D59D40;
+@media screen and (min-width: 1200px) {
+  .ofers .price-on {
+    margin-top: 8px;
+    font-size: 70px;
+    line-height: 91px;
+    letter-spacing: -0.025em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ofers .creat-line-mob {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 1px;
+    margin-left: 51px;
+    margin-right: 51px;
+    background: #D59D40;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ofers .div-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 
 .information {
@@ -525,6 +639,12 @@ h1 {
     border: 2px solid #BEBEBE;
   }
 }
+@media screen and (min-width: 1200px) {
+  .information {
+    width: 457.17px;
+    height: 170.64px;
+  }
+}
 
 .info-abs {
   position: relative;
@@ -540,7 +660,7 @@ h1 {
     padding-top: 23px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .info-abs {
     width: 641px;
     margin-top: 41px;
@@ -570,6 +690,12 @@ h1 {
     line-height: 65px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .info-abs span {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 .info-abs h3 {
   margin-bottom: 4px;
   text-align: center;
@@ -591,6 +717,14 @@ h1 {
     letter-spacing: 0.01em;
   }
 }
+@media screen and (min-width: 1200px) {
+  .info-abs h3 {
+    width: 418px;
+    font-size: 37px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+  }
+}
 .info-abs p {
   font-style: italic;
   letter-spacing: -0.07em;
@@ -608,6 +742,14 @@ h1 {
     font-size: 16px;
     line-height: 113.6%;
     /* or 18px */
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info-abs p {
+    width: 327px;
+    font-size: 20px;
+    line-height: 113.6%;
+    /* or 23px */
   }
 }
 
@@ -638,16 +780,29 @@ h1 {
     letter-spacing: 0.06em;
   }
 }
+@media screen and (min-width: 1200px) {
+  .info-btn p {
+    line-height: 120.1%;
+    ont-size: 35px;
+    /* or 42px */
+    letter-spacing: 0.02em;
+  }
+}
 @media screen and (max-width: 767px) {
   .info-btn .button {
     margin-bottom: 32px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .info-btn .button-2 {
     margin-left: 57px;
     padding-left: 67px;
     padding-right: 67px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info-btn .button {
+    padding: 5px, 10px;
   }
 }
 @media screen and (min-width: 768px) {
