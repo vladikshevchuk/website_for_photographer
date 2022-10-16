@@ -1,12 +1,13 @@
 .faq {
     @media screen and (min-width: 1200px) {
         display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .faq-bg {
         position: relative;
-        margin-left: auto;
-        margin-right: auto;
 
         @media screen and (max-width: 767px) {
             margin-bottom: 330px;
@@ -25,7 +26,7 @@
                 }
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
             margin-bottom: 330px;
             padding-top: 500px;
 
@@ -39,6 +40,23 @@
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
                     background-image: url(../images/FAQ/FAQ-tab@2x.jpg);
+                }
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 600px;
+            height: 1000px;
+
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0),
+                        rgba(47, 48, 58, 0)),
+                    url(../images/FAQ/FAQ-desk.jpg);
+            
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/FAQ/FAQ-desk@2x.jpg);
                 }
         }
         
@@ -72,6 +90,7 @@
         }
 
         @media screen and (min-width: 1200px) {
+            top: 59%;
             font-size: 170px;
             line-height: 220px;
             /* identical to box height */
@@ -158,7 +177,7 @@
             transform: translate(-50%, 50%);
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
             width: 513.8px;
             padding-left: 230px;
             padding-top: 124.35px;
@@ -168,6 +187,19 @@
             bottom: -65%;
 
             transform: translate(-50%);
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 522px;
+            padding-left: 230px;
+            padding-top: 117px;
+            padding-bottom: 42px;
+
+            bottom: -4%;
+            left: 60%;
+
+            transform: translate(-50%);
+
         }
     }
 

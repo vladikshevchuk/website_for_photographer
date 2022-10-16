@@ -70,6 +70,8 @@
     }
 
     .comments {
+        position: relative;
+
         @media screen and (max-width: 767px) {
             display: none;
         }
@@ -81,6 +83,28 @@
             li {
                 width: 225px;
                 margin-right: 70px;
+            }
+
+            &-item-2::after {
+                content: '';
+                width: 724px;
+                position: absolute;
+                top: 40%;
+                left: -10%;
+                
+                border: 3px solid #D59D40;
+                transform: rotate(90deg);
+            }
+
+            &-item-3::after {
+                content: '';
+                width: 724px;
+                position: absolute;
+                top: 40%;
+                left: 23%;
+                
+                border: 3px solid #D59D40;
+                transform: rotate(90deg);
             }
         }
     }
