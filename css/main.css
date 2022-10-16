@@ -1555,11 +1555,13 @@ header .use {
     margin-top: 33px;
   }
 }
-.about ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 132px;
+@media screen and (min-width: 1200px) {
+  .about ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 132px;
+  }
 }
 .about h2 {
   margin-right: 75px;

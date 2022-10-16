@@ -57,8 +57,10 @@
     }
 
     ul {
-        display: flex;
-        margin-top: 132px;
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            margin-top: 132px;
+        }
     }
 
     h2 {
